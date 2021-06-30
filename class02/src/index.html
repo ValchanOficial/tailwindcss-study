@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 02</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 1rem = 16px -->
+    <div class="container bg-red-300 mx-auto p-4 my-4 text-red-900 border-red-600 border-2">
+        <p>O texto do container</p>
+    </div>
+    <div class="container bg-green-300 md:bg-blue-300 mx-auto p-4 my-4 text-blue-900 border-blue-600 border-2" >
+        <p>O texto do container</p>
+    </div>
+    <!-- Border box and Border content-->
+    <div class="container bg-purple-700 border-2 border-purple-900 m-4 box-border p-10">
+        <p>Border box // largura total somada com padding e borders</p>
+    </div>
+    <div class="container bg-pink-400 border-2 border-pink-900 m-4 box-content p-10">
+        <p>Border content // largura respeitando a medida e com padding e border passando a largura determinada</p>
+    </div>
+    <!-- Display -->
+    <div class="container">
+        <span class="block bg-red-300">Não são elementos de bloco // default inline</span>
+        <span class="block bg-green-300">Não são elementos de bloco</span>
+        <div class="bg-blue-500 inline-block">Block // default block</div>
+        <div class="bg-blue-500 inline-block">Block</div>
+        <div class="bg-green-300 hidden">Estou aparecendo</div>
+    </div>
+    <div class="container bg-red-100">
+        <div class="inline-block bg-pink-500">V</div>
+        <div class="inline-block bg-blue-500">A</div>
+        <div class="inline-block bg-purple-500">L</div>
+    </div>
+    <!-- Floats and clear -->
+    <div class="bg-blue-500 float-right">Float right 1</div>
+    <div class="bg-blue-500 float-left">Float left 1</div>
+    <div class="clearfix"></div>
+    <div class="bg-red-500 float-right">Float right 2</div>
+    <div class="bg-red-500 float-left">Float left 2</div>
+    <div class="clearfix"></div>
+    <!-- Overflow -->
+    <div class="overflow-hidden h-16 m-6 bg-red-300">
+        <p>Overflow HIDDEN</p>
+        <p>Overflow HIDDEN</p>
+        <p>Overflow HIDDEN</p>
+        <p>Overflow HIDDEN</p>
+        <p>Overflow HIDDEN</p>
+        <p>Overflow HIDDEN</p>
+    </div>
+    <div class="overflow-auto h-16 m-6 bg-green-300">
+        <p>Overflow AUTO</p>
+        <p>Overflow AUTO</p>
+        <p>Overflow AUTO</p>
+        <p>Overflow AUTO</p>
+        <p>Overflow AUTO</p>
+    </div>
+    <div class="overflow-x-auto h-16 m-6 bg-blue-300">
+        <p>OverflowXAUTOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    </div>
+    <div class="overflow-y-auto h-16 m-6 bg-purple-300">
+        <p>Overflow Y AUTO</p>
+        <p>Overflow Y AUTO</p>
+        <p>Overflow Y AUTO</p>
+        <p>Overflow Y AUTO</p>
+        <p>Overflow Y AUTO</p>
+        <p>Overflow Y AUTO</p>
+        <p>Overflow Y AUTO</p>
+    </div>
+    <!-- Positions and Directions -->
+    <div class="relative bg-pink-300">
+        Relative
+        <div class="absolute top-0 right-0 bg-pink-900">
+            Absolute
+        </div>
+    </div>
+    <div class="relative bg-blue-300 h-10">
+        Relative
+        <div class="absolute bottom-0 right-0 bg-blue-900">
+            Absolute
+        </div>
+    </div>
+    <!-- Visibility: visible=visible or invisible=hidden -->
+    <div class="container bg-red-400 invisible m-10">
+        <p>Estou oculto</p>
+    </div>
+    <div class="container bg-red-400 visible">
+        <p>Estou visível</p>
+    </div>
+    <!-- z-index -->
+    <div class="container relative">
+        <div class="bg-red-300 h-20 w-20 p-6 absolute z-10">Na frente</div>
+        <div class="bg-red-600 h-20 w-20 p-6 absolute m-4">Atrás</div>
+    </div>
+    <div class="container relative h-20 mt-20">
+        <div class="bg-blue-300 h-20 w-20 p-6 absolute z-10"></div>
+        <div class="bg-blue-600 h-20 w-20 p-6 absolute m-4 z-20"></div>
+        <div class="bg-blue-900 h-20 w-20 p-6 absolute m-8 z-30"></div>
+    </div>
+</body>
+</html>
