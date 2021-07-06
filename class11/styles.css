@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-rose-900 hover:bg-rose-800 sm:dark:bg-rose-400 dark:bg-rose-500 dark:hover:bg-rose-300 rounded-full p-2;
+}

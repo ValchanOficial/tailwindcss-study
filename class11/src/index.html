@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en' class='dark'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Class 11</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <script defer src='js/scripts.js'></script>
+</head>
+<body>
+    <!-- new colors, dark mode: media(dark:style) or class(manual), -->
+    <div class="bg-rose-200  dark:bg-rose-500 text-black dark:text-white font-bold text-cecnter p-10">
+        <p>TailwindCSS V2</p>
+    </div>
+    <div class="bg-amber-200 dark:bg-amber-500 text-black dark:text-white font-bold text-cecnter p-10">
+        <p>Dark Mode: media</p>
+    </div>
+    <div class="m-4">
+        <button id="dark-mode" class="btn">Dark Mode: class</button>
+    </div>
+    <!-- Ring Utilities -->
+    <div class="m-4">
+        <button class="p-4 bg-amber-400 hover:bg-amber-600 text-white ring-4 ring-amber-600 rounded">Ring externo</button>
+        <button class="p-4 bg-rose-400 hover:bg-rose-700 text-white ring-4 ring-rose-700 ring-inset mx-4 rounded-full">Ring interno</button>
+    </div>
+    <!-- @tailwindcss/forms -->
+    <div class="m-6 bg-rose-200 p-6">
+        <form action="">
+            <div class="m-2"><input type="text" placeholder="Digite o seu nome" class="rounded"></div>
+            <div class="m-2"><input type="text" placeholder="Digite o seu nome" class="border-0 border-b-2 border-gray-600"></div>
+            <div class="m-2"><input type="text" placeholder="Digite o seu nome" class="border-transparent bg-gray-200 rounded"></div>
+            <div class="m-2">
+                <select name="" id="0" class="py-2 rounded">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                </select>
+            </div>
+            <div class="m-4">
+                <input type="checkbox" id="checkbox" class="border-amber-300 text-amber-300 mr-2 focus:ring-0">
+                <label for="checkbox">Checkbox</label>
+            </div>
+        </form>
+    </div>
+    <!-- font-size with default line-height - to change leading-x -->
+    <div class="m-6">
+        <h1 class="text-4xl">Line Height</h1>
+        <h1 class="text-4xl leading-3">Line Height</h1>
+        <h1 class="text-4xl leading-5">Line Height</h1>
+    </div>
+    <!-- overflow-(ellipsis|clip) -->
+    <div class="bg-blue-100">
+        <p class="overflow-hidden overflow-ellipsis max-w-xs m-6 p-6 mx-auto bg-red-200 text-red-500 font-medium rounded-lg">ellipsis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quae quos quasi molestiae. Explicabo exercitationem non fugit, deleniti alias neque numquam sint quibusdam magnam ipsa tempora cumque architecto error perferendis.
+        Alias, molestias voluptas fuga nesciunt, porro ab nam, qui magni beatae magnam quos. Doloremque neque odit solutamaximeveniamraesentiumepellendussaepe? Ex repellat, esse nulla eveniet cumque officia blanditiis?</p>
+        <p class="overflow-hidden overflow-clip max-w-xs m-6 p-6 mx-auto bg-green-200 text-green-500 font-medium rounded-lg">clip Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo accusamus ducimus odit nulla numquam qui nesciunt perspiciatis, animi mollitia porro esse. Amet provident in repellendus voluptas adipisci numquam incidunt.
+        Consequaturconsequunturearumatexercitationeminrepudiandaebeataesuntcumeos, quis, nulla nobis aliquam? Fugiat delectus qui nulla dicta, sed itaque quas doloribus possimus aliquam culpa ratione? Alias, dignissimos.</p>
+        <p class="max-w-xs m-6 p-6 mx-auto bg-yellow-200 text-yellow-500 font-medium rounded-lg">no overflow Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo accusamus ducimus odit nulla numquam qui nesciunt perspiciatis, animi mollitia porro esse. Amet provident in repellendus voluptas adipisci numquam incidunt.
+        Consequaturconsequunturearumatexercitationeminrepudiandaebeataesuntcumeos, quis, nulla nobis aliquam? Fugiat delectus qui nulla dicta, sed itaque quas doloribus possimus aliquam culpa ratione? Alias, dignissimos.</p>
+    </div>
+    </div>
+</body>
+</html>

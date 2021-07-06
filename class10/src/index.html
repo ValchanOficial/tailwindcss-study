@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Class 10</title>
+    <link rel='stylesheet' href='css/styles.css'>
+</head>
+<body>
+    <!-- appearance-none -->
+    <select class="appearance-none">
+        <option value="">Teste</option>
+    </select>
+    <select>
+        <option value="">Teste</option>
+    </select>
+    <!-- Cursor cursor-x -->
+    <div class="cursor-pointer w-20 m-4 p-4 bg-red-200 text-center">Botão</div>
+    <div class="cursor-wait w-20 m-4 p-4 bg-red-200 text-center">Botão</div>
+    <div class="cursor-not-allowed w-20 m-4 p-4 bg-red-200 text-center">Botão</div>
+    <div class="cursor-text w-20 m-4 p-4 bg-red-200 text-center">Botão</div>
+    <div class="cursor-move w-20 m-4 p-4 bg-red-200 text-center">Botão</div>
+    <!-- outline-none -->
+    <input type="email" name="email" id="email" class="bg-gray-300 outline-none" placeholder="outline-none">
+    <input type="email" name="email" id="email" class="bg-gray-300 outline-white" placeholder="outline-white">
+    <input type="email" name="email" id="email" class="bg-gray-300 outline-black" placeholder="outline-black">
+    <input type="email" name="email" id="email" class="bg-gray-300" placeholder="with outline">
+    <!-- Remove pointer events: pointer-events-(none|auto) -->
+    <div>
+        <select class="pointer-events-none">
+            <option value="">Teste</option>
+        </select>
+        <select>
+            <option value="">Teste</option>
+        </select>
+    </div>
+    <!-- textarea resize-x -->
+    <div class="bg-green-200">
+        <textarea cols="30" rows="10" class="resize-none"></textarea>
+        <textarea cols="30" rows="10" class="resize-x"></textarea>
+        <textarea cols="30" rows="10" class="resize-y"></textarea>
+        <textarea cols="30" rows="10" class="resize"></textarea>
+    </div>
+    <!-- select-(none|auto|text|all) default: auto -->
+    <div class="bg-red-200">
+        <p class="select-none">Não posso selecionar</p>
+        <p class="select-all">Não posso selecionar</p>
+    </div>
+</body>
+</html>
